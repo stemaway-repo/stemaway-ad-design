@@ -1,46 +1,60 @@
-.simple-image-ad {
-    border-radius: 7px;
-    background-size: cover;
-    padding: 2rem;
-
-    position: relative;
-
-
-    .ad-notation {
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        z-index: 5;
-        background: white;
-        padding: 0.25rem;
-        border-radius: 3px;
-        background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(3px);
-        text-transform: uppercase;
-        color: white;
-
-        h6 {
-            margin: 0;
-        }
+// Mixins:
+@mixin button-lift {
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    &:hover {
+        transform: scale(1.08);
+        opacity: 0.8;
     }
+}
+
+a.btn-ad-cta {
+    @media screen and (min-width: 935px) {
+        margin: 0;
+    }
+    margin: 1rem; 
+    z-index: 3;
+    border-radius: 7px;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    @include button-lift; 
+
+}
+
+// Marker at the top right denoting the banner is an ad
+.ad-notation {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 5;
+    background: white;
+    padding: 0.25rem;
+    border-radius: 3px;
+    background: rgba(86, 86, 86, 0.5);
+    text-transform: uppercase;
+    color: white;
+
+    h6 {
+        margin: 0;
+    }
+}
+
+// Both regular ad and ad-with-bg
+.ad-regular-with-bg, .ad-regular {
+    border-radius: 7px;
+    padding: 2rem;
+    position: relative;
 
     .ad-container {
         padding: 1rem;
-        
         display: flex;
         align-items: center;
-        background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(5px);
-        border-radius: 7px;
         justify-content: center;
-        height: 100%;
         flex-flow: row wrap;
         margin: 1rem 0;
         
         @media screen and (min-width: 935px) {
-            padding: 2rem;
-            justify-content: space-between;
-            max-width: 50%;
             margin: 0;
         }
 
@@ -49,29 +63,57 @@
             z-index: 3;
 
             @media screen and (min-width: 550px) {                
-                max-width: 50%;
                 margin-right: 2rem;
             }
 
         }
 
-        a {
-            @media screen and (min-width: 935px) {
-                margin: 0;
+    }
+}
+
+// Only on regular ad with bg
+.ad-regular-with-bg {
+    background-size: cover;
+
+    .ad-container {
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 7px;
+        height: 100%;
+        
+        @media screen and (min-width: 935px) {
+            padding: 2rem;
+            justify-content: space-between;
+            max-width: 50%;
+        }
+
+        img {
+            @media screen and (min-width: 550px) {                
+                max-width: 50%;
             }
-            margin: 1rem; 
-            z-index: 3;
-            background: #57068C;
-            border-radius: 7px;
-            padding: 0.8rem 1rem;
-            color: white;
-            font-weight: bold;
-            font-size: 1.25rem;
-            transition: background-color 0.25s ease, transform 0.25s ease;
-            // margin-bottom: 0;
-            &:hover {
-                transform: scale(1.08);
-                background-color: rgb(66, 17, 99);
+        }
+    }
+}
+
+// Only on regular ad
+.ad-regular {
+    .ad-container {
+
+        @media screen and (min-width: 935px) {
+            justify-content: space-evenly;
+        }
+        h3 {
+            font-weight: 200;
+            font-size: 2rem;
+            flex-basis: 40%;
+            text-align: left;
+        }
+        img {
+            margin-bottom: 1rem;
+            max-width: 60%;
+            @media screen and (min-width: 550px) {                
+                max-width: 15%;
+                margin-bottom: 0;
             }
         }
     }
