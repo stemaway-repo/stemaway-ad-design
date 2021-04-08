@@ -1,7 +1,10 @@
 {
-  "name": "Simple Ad Design",
+  "name": "Ad Design",
   "about_url": null,
   "license_url": null,
+  "component": true,
+  "authors": "Keegan George",
+  "theme_version": "0.1.0",
   "assets": {
   },
   "color_schemes": {
