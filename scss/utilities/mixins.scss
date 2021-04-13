@@ -1,0 +1,7 @@
+@mixin button-lift {
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    &:hover {
+        transform: scale(1.08);
+        opacity: 0.8;
+    }
+}
