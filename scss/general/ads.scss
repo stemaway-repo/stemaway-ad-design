@@ -2,8 +2,7 @@
     display: block;
     clear: both;
     position: relative;
-    // max-width: calc(#{$topic-body-width} + #{$topic-avatar-width} + (#{$topic-body-width-padding} * 2)) !important;
-    // max-width: 32rem;
+    max-width: 32rem;
     max-height: 4rem;
     border-radius: 0.375rem;
     padding: 1.5rem;
@@ -12,7 +11,7 @@
       padding: 0;
       // max-width: 468px;
       // max-height: 60px;
-      // max-width: 32rem;
+      max-width: 32rem;
       max-height: 4rem;
       display: flex;
       align-items: center;
@@ -25,10 +24,6 @@
       }
   
       h3 {
-        display: none;
-        @media screen and (min-width: 393px) {
-          display: block;
-        }
         font-weight: 200;
         margin: 0 auto;
         margin-right: 1rem;
@@ -37,10 +32,6 @@
         @media screen and (min-width: 500px) {
           font-size: 1.3rem;
           flex-basis: 50%;
-        }
-
-        @media screen and (min-width: 1200px) {
-          font-size: 1.5rem;
         }
       }
   
