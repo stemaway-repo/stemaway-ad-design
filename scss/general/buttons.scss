@@ -7,6 +7,10 @@ a.btn-ad-cta {
     color: white;
     font-weight: bold;
     font-size: 0.8rem;
+    @media screen and (min-width: 916px) {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
     @include button-lift; 
 }
 
