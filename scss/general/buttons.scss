@@ -1,27 +1,26 @@
 a.btn-ad-cta {
-    z-index: 3;
-    border-radius: 0.375rem;
-    padding: 0.35rem;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 0.8rem;
-    @include button-lift; 
+  z-index: 3;
+  border-radius: 0.375rem;
+  padding: 0.35rem;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  @include button-lift;
 }
 
 .carousel-ad-cta {
-   
-    a.carousel-ad-cta-button {
-        position: absolute;
-        right: 5%;
-        top: 70%;
-        background-color:rgba(189, 189, 189, 0.8);
-        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-        padding: 1rem;
-        border-radius: 5px;
-        color: white;
-        font-weight: bolder;
-        transition: background-color 0.25s ease;
-   }
+  a.carousel-ad-cta-button {
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    background-color: rgba(189, 189, 189, 0.8);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    transition: background-color 0.25s ease;
+  }
 }
