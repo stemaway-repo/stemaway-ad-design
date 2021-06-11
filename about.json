@@ -1,10 +1,10 @@
 {
   "name": "STEM-Away Ad Design",
-  "about_url": null,
-  "license_url": null,
+  "about_url": "https://github.com/stemaway-repo/stemaway-ad-design",
+  "license_url": "https://github.com/stemaway-repo/stemaway-ad-design/blob/master/LICENSE.txt",
   "component": true,
   "authors": "Keegan George",
-  "theme_version": "0.1.0",
+  "theme_version": "1.0.0",
   "assets": {
   },
   "color_schemes": {
