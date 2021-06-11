@@ -19,11 +19,14 @@ https://stemaway.com/partners
 # Ad Types
 
 **Static Tagline Ads**:
+
 ![Static Tagline Ads](https://stemaway.com/plugins/spages-plugin/images/ad-center/tagline-mobile.png)
 
 **Static Background Ads**:
+
 ![Static Background Ads](https://stemaway.com/plugins/spages-plugin/images/ad-center/background-mobile.png)
 
 **Static Carousel Ads**:
+
 ![Static Carousel Ads](https://stemaway.com/plugins/spages-plugin/images/ad-center/carousel-mobile.png)
 
